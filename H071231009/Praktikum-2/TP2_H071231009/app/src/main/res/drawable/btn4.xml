@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- Warna latar belakang tombol -->
+    <solid android:color="@color/blue"  />
+
+    <!-- Kelengkungan sudut -->
+    <corners android:radius="50dp" />
+
+
+    <!-- Opsional: Tambahkan border -->
+
+
+</shape>

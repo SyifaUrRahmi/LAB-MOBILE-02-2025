@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+
+    <!-- Warna latar belakang LinearLayout -->
+    <solid android:color="@color/header" />
+
+    <!-- Radius sudut -->
+
+
+    <!-- Border (opsional) -->
+    <stroke
+        android:color="@color/bordir"
+        android:width="1dp"
+        />
+
+</shape>

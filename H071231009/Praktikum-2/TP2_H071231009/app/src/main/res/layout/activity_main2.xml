@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+<!--Header-->
+    <RelativeLayout
+        android:id="@+id/header_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:background="@color/header">
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="25dp"
+            android:layout_height="35dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:background="@color/header"
+            android:src="@drawable/baseline_arrow_back_ios_24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile Setting"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:padding="20dp"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+<!--End Header-->
+
+<!--Body-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/header_title"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@color/body"
+        android:paddingHorizontal="20dp"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+            android:id="@+id/body1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/body"
+            android:layout_marginTop="20dp"
+            >
+            <RelativeLayout
+                android:id="@+id/relativ1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp">
+                <TextView
+                    android:id="@+id/teksPremium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tipe Akun"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    />
+                <TextView
+                    android:id="@+id/teksDanaP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dana Premium"
+                    android:textColor="@color/header"
+                    android:textSize="16sp"
+                    android:layout_toStartOf="@+id/next1"
+                    android:layout_marginEnd="10dp"
+                    />
+                <ImageButton
+                    android:id="@+id/next1"
+                    android:layout_width="10dp"
+                    android:layout_height="16dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/baseline_arrow_forward_ios_24"
+                    android:tint="@color/bordir"
+                    android:background="@android:color/transparent"
+                    />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/hr1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/relativ1"
+                android:background="@color/bordir"
+                />
+
+            <RelativeLayout
+                android:layout_below="@id/hr1"
+                android:id="@+id/relativ2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp">
+                <TextView
+                    android:id="@+id/gantiProfil"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ganti Gambar Profil"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_centerVertical="true"
+                    />
+                <ImageView
+                    android:id="@+id/profil4"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/profil"
+                    android:clipToOutline="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/gambar1"
+                    android:layout_toStartOf="@+id/gantiProfil2"
+                    android:layout_marginEnd="10dp"
+                    />
+                <ImageButton
+                    android:id="@+id/gantiProfil2"
+                    android:layout_width="10dp"
+                    android:layout_height="16dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/baseline_arrow_forward_ios_24"
+                    android:tint="@color/bordir"
+                    android:background="@android:color/transparent"
+                    />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/hr2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/relativ2"
+                android:background="@color/bordir"
+                />
+
+            <RelativeLayout
+                android:layout_below="@id/hr2"
+                android:id="@+id/relativ3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp">
+                <TextView
+                    android:id="@+id/nama"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nama Asli"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    />
+                <TextView
+                    android:id="@+id/nama1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RESKY AULIYAH KARTINI A"
+                    android:textColor="@color/bordir"
+                    android:textSize="16sp"
+                    android:layout_alignParentEnd="true"
+                    />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/hr3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/relativ3"
+                android:background="@color/bordir"
+                />
+
+            <RelativeLayout
+                android:layout_below="@id/hr3"
+                android:id="@+id/relativ4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp">
+                <TextView
+                    android:id="@+id/username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Username"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    />
+                <TextView
+                    android:id="@+id/username1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pasang"
+                    android:textColor="@color/header"
+                    android:textSize="16sp"
+                    android:layout_toStartOf="@+id/username2"
+                    android:layout_marginEnd="10dp"
+                    />
+                <ImageButton
+                    android:id="@+id/username2"
+                    android:layout_width="10dp"
+                    android:layout_height="16dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/baseline_arrow_forward_ios_24"
+                    android:tint="@color/bordir"
+                    android:background="@android:color/transparent"
+                    />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/hr4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/relativ4"
+                android:background="@color/bordir"
+                />
+
+            <RelativeLayout
+                android:layout_below="@id/hr4"
+                android:id="@+id/relativ5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp">
+                <TextView
+                    android:id="@+id/gantinomor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ubah Nomor Ponsel"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    />
+                <TextView
+                    android:id="@+id/gantinomor1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="62 895 3301 53087"
+                    android:textColor="@color/header"
+                    android:textSize="16sp"
+                    android:layout_toStartOf="@+id/gantinomor2"
+                    android:layout_marginEnd="10dp"
+                    />
+                <ImageButton
+                    android:id="@+id/gantinomor2"
+                    android:layout_width="10dp"
+                    android:layout_height="16dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/baseline_arrow_forward_ios_24"
+                    android:tint="@color/bordir"
+                    android:background="@android:color/transparent"
+                    />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/hr5"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/relativ5"
+                android:background="@color/bordir"
+                />
+
+            <RelativeLayout
+                android:layout_below="@id/hr5"
+                android:id="@+id/relativ6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp">
+                <TextView
+                    android:id="@+id/email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alamat Email"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    />
+                <TextView
+                    android:id="@+id/email1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pasang"
+                    android:textColor="@color/header"
+                    android:textSize="16sp"
+                    android:layout_toStartOf="@+id/email2"
+                    android:layout_marginEnd="10dp"
+                    />
+                <ImageButton
+                    android:id="@+id/email2"
+                    android:layout_width="10dp"
+                    android:layout_height="16dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/baseline_arrow_forward_ios_24"
+                    android:tint="@color/bordir"
+                    android:background="@android:color/transparent"
+                    />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/body2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/body"
+            android:layout_marginTop="20dp"
+
+            >
+            <RelativeLayout
+                android:id="@+id/relativ7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp">
+                <TextView
+                    android:id="@+id/akun"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Akun BI-FAST"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    />
+                <TextView
+                    android:id="@+id/akun1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Atur"
+                    android:textColor="@color/header"
+                    android:textSize="16sp"
+                    android:layout_toStartOf="@+id/akun2"
+                    android:layout_marginEnd="10dp"
+                    />
+                <ImageButton
+                    android:id="@+id/akun2"
+                    android:layout_width="10dp"
+                    android:layout_height="16dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/baseline_arrow_forward_ios_24"
+                    android:tint="@color/bordir"
+                    android:background="@android:color/transparent"
+                    />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/body"
+            android:layout_marginTop="20dp"
+
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                >
+                <TextView
+                    android:id="@+id/bagikan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bagikan Aktivitas Feed"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    />
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:checked="true"
+                    />
+
+                <TextView
+                    android:layout_below="@+id/bagikan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Kalau fitur ini dimatikan, aktivitasmu tidak akan dibagikan tapi kamu tetap bisa mengakses Feed."
+                    />
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+<!--End Body-->
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

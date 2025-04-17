@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Latar Belakang (Abu-abu) -->
+    <item android:id="@android:id/background">
+        <shape>
+            <solid android:color="#D3D3D3"/> <!-- Warna abu-abu -->
+            <corners android:radius="12dp"/>
+        </shape>
+    </item>
+
+    <!-- Progress Utama (Biru) -->
+    <item android:id="@android:id/progress">
+        <clip>  <!-- Tambahkan clip di sini -->
+            <shape>
+                <solid android:color="@color/header"/> <!-- Warna biru -->
+                <corners android:radius="10dp"/>
+            </shape>
+        </clip>
+    </item>
+
+</layer-list>

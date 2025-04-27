@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sorotanUser"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/black"
+    android:layout_margin="8dp"
+    >
+
+    <!-- Lingkaran Border -->
+    <FrameLayout
+        android:id="@+id/frameBorder"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/bg_border_sorotan"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/imageSorotan"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@drawable/bulatlingkaran"
+            android:clipToOutline="true"
+            android:outlineProvider="background"
+            android:scaleType="centerCrop"
+            android:src="@drawable/contohsorotan"/>
+    </FrameLayout>
+
+    <!-- Teks Nama Sorotan -->
+    <TextView
+        android:id="@+id/textSorotan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sorotan"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:gravity="center"/>
+
+</LinearLayout>

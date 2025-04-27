@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black"
+    android:orientation="vertical"
+    android:layout_marginBottom="20dp"
+    >
+    <!--Header-->
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp">
+
+        <ImageButton
+            android:id="@+id/kunci"
+            android:layout_width="18dp"
+            android:layout_height="16dp"
+            android:layout_gravity="center_vertical"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/lock"
+            android:tint="@color/white" />
+
+        <TextView
+            android:id="@+id/usernameheader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:text="rsky.auliyah"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:padding="2dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/threads"
+            android:tint="@color/white" />
+
+        <ImageButton
+            android:id="@+id/tambahPost"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:background="@android:color/transparent"
+            android:padding="3dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/plus"
+            android:tint="@color/white" />
+
+        <ImageButton
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/menu"
+            android:tint="@color/white" />
+    </LinearLayout>
+    <!--END Header-->
+
+    <!--Profil-->
+    <LinearLayout
+        android:id="@+id/bagian2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="30dp"
+        >
+        <!--FOTO Profil-->
+        <ImageView
+            android:id="@+id/imageProfil"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:background="@drawable/bulatlingkaran"
+            android:clipToOutline="true"
+            android:outlineProvider="background"
+            android:scaleType="centerCrop"
+            android:src="@drawable/contohsorotan"/>
+        <!--END Profil-->
+
+        <!--INFO Profil-->
+        <LinearLayout
+            android:layout_marginHorizontal="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            >
+            <!--NAMA USERNAME-->
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="rsky.auliyah"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                />
+            <!--END USERNAME-->
+
+            <!--INFO-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                >
+                <!--INFO POSTINGAN-->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+
+                    >
+                    <TextView
+                        android:id="@+id/jumlahPostingan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="postingan"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        />
+                </LinearLayout>
+                <!--END POSTINGAN-->
+
+                <!--PENGIKUT-->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:id="@+id/jumlahPengikut"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="572"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="pengikut"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        />
+                </LinearLayout>
+                <!--END PENGIKUT-->
+
+                <!--MENGIKUTI-->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:id="@+id/jumlahMengikuti"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="523"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="mengikuti"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        />
+                </LinearLayout>
+                <!--END MENGIKUTI-->
+            </LinearLayout>
+            <!--END INFO-->
+        </LinearLayout>
+        <!--END INFO PROFIL-->
+    </LinearLayout>
+    <!--END Profil-->
+
+    <!--BIO-->
+    <TextView
+        android:id="@+id/bio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Makassar,"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        />
+    <!--END BIO-->
+
+    <LinearLayout
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        >
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_button"
+            android:textColor="@color/white"
+            android:text="Edit Profil"
+            android:textSize="12sp"
+            />
+        <Button
+            android:layout_marginStart="10dp"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_button"
+            android:text="Bagikan Profil"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            />
+
+        <ImageButton
+            android:layout_marginStart="10dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/add"
+            android:scaleType="fitCenter"
+            android:clipToOutline="true"
+            android:padding="6dp"
+            android:background="@drawable/rounded_button"
+            android:tint="@color/white"
+
+            />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+    <!-- BAGIAN NAVIGASI BAWAH -->
+    <LinearLayout
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="20dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:src="@drawable/postfeed"
+                android:scaleType="fitCenter"
+                android:tint="@color/white"
+                android:background="@android:color/transparent"
+                android:layout_gravity="center" />
+
+            <View
+                android:layout_marginTop="10dp"
+                android:layout_width="40dp"
+                android:layout_height="2dp"
+                android:background="@color/white"
+                android:layout_gravity="center" />
+        </LinearLayout>
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="20dp"
+            android:src="@drawable/video"
+            android:scaleType="fitCenter"
+            android:background="@android:color/transparent"
+            android:tint="#ED8A7C7C" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_weight="1"
+            android:src="@drawable/profiletag"
+            android:scaleType="fitCenter"
+            android:tint="#ED8A7C7C"
+            android:background="@android:color/transparent" />
+    </LinearLayout>
+
+    <!-- GRID POSTINGAN -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerPostGrid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:clipToPadding="false"
+        android:overScrollMode="never" />
+</LinearLayout>

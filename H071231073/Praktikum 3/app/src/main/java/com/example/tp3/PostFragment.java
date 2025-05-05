@@ -84,7 +84,7 @@ public class PostFragment extends Fragment {
 
     private void submitPost() {
         String caption = captionInput.getText().toString();
-        FeedProfile newPost = new FeedProfile(selectedImageUri.toString());
+        FeedProfile newPost = new FeedProfile(selectedImageUri.toString(), caption);
         DataDummy.feedProfiles.add(0, newPost);
 
         if (getActivity() instanceof MainActivity) {

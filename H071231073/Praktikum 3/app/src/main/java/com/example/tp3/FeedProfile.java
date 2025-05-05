@@ -27,6 +27,19 @@ public class FeedProfile implements Parcelable {
         this.likedBy = likedBy;
     }
 
+    public FeedProfile(String imageUri, String caption) {
+        this.imageUri = imageUri;
+        this.caption = caption;
+        this.username = username;
+        this.profilePicture = profilePicture;
+        this.likes = likes;
+        this.comments = comments;
+        this.shares = shares;
+        this.likedBy = likedBy;
+    }
+
+
+
     public int getComments() {
         return comments;
     }

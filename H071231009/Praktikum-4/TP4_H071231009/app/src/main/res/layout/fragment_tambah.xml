@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".TambahFragment">
+
+    <LinearLayout
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        >
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/addition"
+            android:layout_gravity="center"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tambah Buku"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        >
+        <LinearLayout
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <androidx.cardview.widget.CardView
+                android:layout_width="170dp"
+                android:layout_height="200dp"
+                app:cardCornerRadius="20dp"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                >
+                <ImageButton
+                    android:id="@+id/img_buku"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/baseline_add_photo_alternate_24"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"
+                    android:background="@android:color/transparent"
+                    />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Detail Buku:"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                />
+            <EditText
+                android:id="@+id/judul"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Judul Buku"
+                android:background="@drawable/rounded_button"
+                android:padding="10dp"
+                />
+
+            <EditText
+                android:id="@+id/penulis"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Penulis"
+                android:background="@drawable/rounded_button"
+                android:padding="10dp"
+                />
+
+            <Spinner
+                android:id="@+id/genre"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_button"
+                android:padding="10dp"
+                android:spinnerMode="dropdown"
+                />
+
+            <EditText
+                android:id="@+id/tahunTerbit"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Tahun Terbit"
+                android:background="@drawable/rounded_button"
+                android:padding="10dp"
+                android:inputType="number"
+                />
+
+            <EditText
+                android:id="@+id/rating"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Rating"
+                android:inputType="numberDecimal"
+                android:background="@drawable/rounded_button"
+                android:padding="10dp"
+                />
+
+            <EditText
+                android:id="@+id/deskripsi"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Deskripsi Singkat"
+                android:background="@drawable/rounded_button"
+                android:padding="10dp"
+                />
+
+            <Button
+                android:layout_marginVertical="20dp"
+                android:id="@+id/btn_simpan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Simpan"
+                android:textColor="@color/white"
+                android:background="@drawable/rounded_button2"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

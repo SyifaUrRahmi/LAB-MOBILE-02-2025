@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".ProfileFeed">
+
+    <!--Header-->
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="20dp"
+        >
+
+        <ImageButton
+            android:id="@+id/kembali"
+            android:layout_width="16dp"
+            android:layout_height="12dp"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/back"
+            android:tint="@color/white"
+            />
+        <TextView
+            android:id="@+id/usernameheader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="rsky.auliyah"
+            android:textColor="@color/white"
+            android:layout_marginStart="40dp"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            />
+        <ImageButton
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/bell"
+            android:scaleType="centerCrop"
+            android:background="@android:color/transparent"
+            android:tint="@color/white"
+            android:layout_gravity="center"
+            />
+        <ImageButton
+            android:layout_marginStart="20dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/more"
+            android:scaleType="centerCrop"
+            android:background="@android:color/transparent"
+            android:tint="@color/white"
+            android:layout_gravity="center"
+            />
+    </LinearLayout>
+    <!--END Header-->
+
+     <!--Profil-->
+     <LinearLayout
+         android:id="@+id/bagian2"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         app:layout_constraintTop_toBottomOf="@+id/header"
+         android:layout_marginHorizontal="20dp"
+         android:layout_marginTop="30dp"
+         >
+         <!--FOTO Profil-->
+         <ImageView
+             android:id="@+id/imageProfil"
+             android:layout_width="100dp"
+             android:layout_height="100dp"
+             android:layout_gravity="center"
+             android:background="@drawable/bulatlingkaran"
+             android:clipToOutline="true"
+             android:outlineProvider="background"
+             android:scaleType="centerCrop"
+             android:src="@drawable/contohsorotan"/>
+         <!--END Profil-->
+
+         <!--INFO Profil-->
+         <LinearLayout
+             android:layout_marginHorizontal="20dp"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="vertical"
+             android:layout_gravity="center"
+             >
+             <!--NAMA USERNAME-->
+             <TextView
+                 android:id="@+id/username"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="rsky.auliyah"
+                 android:textColor="@color/white"
+                 android:textSize="16sp"
+                 />
+             <!--END USERNAME-->
+
+             <!--INFO-->
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal"
+                 android:layout_marginTop="10dp"
+                 >
+                 <!--INFO POSTINGAN-->
+                 <LinearLayout
+                     android:layout_width="0dp"
+                     android:layout_weight="1"
+                     android:layout_height="wrap_content"
+                     android:orientation="vertical"
+
+                     >
+                     <TextView
+                         android:id="@+id/jumlahPostingan"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="1"
+                         android:textColor="@color/white"
+                         android:textSize="16sp"
+                         android:textStyle="bold"
+                         />
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="postingan"
+                         android:textColor="@color/white"
+                         android:textSize="14sp"
+                         />
+                 </LinearLayout>
+                 <!--END POSTINGAN-->
+
+                 <!--PENGIKUT-->
+                 <LinearLayout
+                     android:layout_width="0dp"
+                     android:layout_weight="1"
+                     android:layout_height="wrap_content"
+                     android:orientation="vertical"
+                     >
+                     <TextView
+                         android:id="@+id/jumlahPengikut"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="1"
+                         android:textColor="@color/white"
+                         android:textSize="16sp"
+                         android:textStyle="bold"
+                         />
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="pengikut"
+                         android:textColor="@color/white"
+                         android:textSize="14sp"
+                         />
+                 </LinearLayout>
+                 <!--END PENGIKUT-->
+
+                 <!--MENGIKUTI-->
+                 <LinearLayout
+                     android:layout_width="0dp"
+                     android:layout_weight="1"
+                     android:layout_height="wrap_content"
+                     android:orientation="vertical"
+                     >
+                     <TextView
+                         android:id="@+id/jumlahMengikuti"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="1"
+                         android:textColor="@color/white"
+                         android:textSize="16sp"
+                         android:textStyle="bold"
+                         />
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="mengikuti"
+                         android:textColor="@color/white"
+                         android:textSize="14sp"
+                         />
+                 </LinearLayout>
+                 <!--END MENGIKUTI-->
+             </LinearLayout>
+             <!--END INFO-->
+         </LinearLayout>
+         <!--END INFO PROFIL-->
+     </LinearLayout>
+    <!--END Profil-->
+
+    <!--BIO-->
+    <TextView
+        android:id="@+id/bio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/bagian2"
+        android:text="Hai ini bio Eky"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:layout_margin="20dp"
+        />
+    <!--END BIO-->
+
+    <LinearLayout
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/bio"
+        android:orientation="horizontal"
+        android:layout_margin="20dp"
+        >
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_button"
+            android:textColor="@color/white"
+            android:text="Mengikuti"
+            android:textSize="12sp"
+            />
+        <Button
+            android:layout_marginStart="10dp"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_button"
+            android:text="Kirim Pesan"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        android:layout_margin="20dp"
+        >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+            <ImageButton
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:src="@drawable/postfeed"
+                android:scaleType="fitCenter"
+                android:tint="@color/white"
+                android:background="@android:color/transparent"
+                android:layout_gravity="center"
+                />
+            <View
+                android:layout_marginTop="10dp"
+                android:layout_width="40dp"
+                android:layout_height="2dp"
+                android:background="@color/white"
+                android:layout_gravity="center"
+                />
+
+        </LinearLayout>
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_weight="1"
+            android:src="@drawable/profiletag"
+            android:scaleType="fitCenter"
+            android:tint="@color/white"
+            android:background="@android:color/transparent"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/logo"
+        android:layout_marginTop="20dp"
+        >
+        <ImageView
+            android:id="@+id/post"
+            android:layout_width="120dp"
+            android:layout_height="150dp"
+            android:src="@drawable/contohsorotan"
+            android:scaleType="centerCrop"
+            />
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

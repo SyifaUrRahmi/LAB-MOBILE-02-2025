@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="4dp"
+    android:layout_margin="4dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/rounded_button"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="120dp"
+            android:layout_height="170dp"
+            app:cardCornerRadius="20dp"
+            android:layout_gravity="center"
+            >
+            <ImageView
+                android:id="@+id/img_buku"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/aksi1"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:id="@+id/judul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Judul Buku"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:id="@+id/penulis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Penulis Buku"
+            android:textSize="16sp"
+            android:gravity="center"
+            />
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+            <ImageView
+                android:id="@+id/bintang1"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:src="@drawable/bintang_kosong"
+                />
+            <ImageView
+                android:id="@+id/bintang2"
+                android:layout_marginStart="2dp"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:src="@drawable/bintang_kosong"
+                />
+            <ImageView
+                android:id="@+id/bintang3"
+                android:layout_marginStart="2dp"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:src="@drawable/bintang_kosong"
+                />
+            <ImageView
+                android:id="@+id/bintang4"
+                android:layout_marginStart="2dp"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:src="@drawable/bintang_kosong"
+                />
+            <ImageView
+                android:id="@+id/bintang5"
+                android:layout_marginStart="2dp"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:src="@drawable/bintang_kosong"
+                />
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

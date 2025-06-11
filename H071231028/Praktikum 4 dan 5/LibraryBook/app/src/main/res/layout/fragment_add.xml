@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <!-- Header -->
+    <RelativeLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:padding="12dp"
+
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="#D8EDE2">
+
+        <!-- ImageView di bawah Header dan sedikit masuk ke dalam Header -->
+
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/heartImg1"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:layout_margin="2dp"
+                android:src="@drawable/heart"
+                android:scaleType="centerInside" />
+
+
+            <ImageView
+                android:id="@+id/heartImg2"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:layout_margin="4dp"
+                android:src="@drawable/heart" />
+
+            <ImageView
+                android:id="@+id/heartImg3"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:layout_margin="4dp"
+                android:src="@drawable/heart" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/book_cover"
+        android:layout_width="200dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="80dp"
+        android:orientation="vertical"
+        android:background="@drawable/add_item"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/headerLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageViewBelowHeader"
+        android:layout_width="200dp"
+        android:layout_height="65dp"
+        android:scaleType="centerCrop"
+        android:layout_marginEnd="150dp"
+        android:src="@drawable/newbook"
+        android:translationY="-20dp"
+        app:layout_constraintTop_toBottomOf="@id/headerLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <!-- Form Fields -->
+    <LinearLayout
+        android:id="@+id/formLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="24dp"
+        android:paddingStart="32dp"
+        android:paddingEnd="32dp"
+        app:layout_constraintTop_toBottomOf="@id/book_cover"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <EditText
+            android:id="@+id/bookName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Book Name..."
+            android:textColorHint="#5E8D79"
+            android:background="@android:color/transparent"
+            android:padding="8dp"
+            android:textColor="#000000"
+            android:textSize="12dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#AAAAAA" />
+
+        <EditText
+            android:id="@+id/AuthorName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Author Name..."
+            android:textColorHint="#5E8D79"
+            android:background="@android:color/transparent"
+            android:padding="8dp"
+            android:textColor="#000000"
+            android:textSize="12dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#AAAAAA" />
+
+        <EditText
+            android:id="@+id/sinopsis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Sinopsis...."
+            android:textColorHint="#5E8D79"
+            android:background="@android:color/transparent"
+            android:padding="8dp"
+            android:textColor="#000000"
+            android:textSize="12dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#AAAAAA" />
+    </LinearLayout>
+
+    <!-- Add Button -->
+    <!-- Ganti dengan nama file gambar kamu -->
+    <ImageButton
+        android:id="@+id/addButton"
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/add_button"
+        android:contentDescription="Add Button"
+        android:scaleType="fitCenter"
+        app:layout_constraintTop_toBottomOf="@id/formLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Bottom Navigation Bar -->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

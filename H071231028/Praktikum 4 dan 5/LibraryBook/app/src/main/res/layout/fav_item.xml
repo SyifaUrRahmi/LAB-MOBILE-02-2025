@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="16dp"
+    card_view:cardElevation="6dp"
+    android:layout_margin="12dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="238dp"
+        android:background="@color/white">
+
+        <!-- Header Pink -->
+        <RelativeLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#F9CFE3">
+
+            <!-- Tiga ikon love di kiri -->
+            <LinearLayout
+
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:gravity="center_vertical"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:spacing="4dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/star2"
+                    android:layout_marginEnd="6dp"
+                    android:contentDescription="Love Icon 1" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/star1"
+                    android:layout_marginEnd="6dp"
+                    android:contentDescription="Love Icon 2" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/star2"
+                    android:contentDescription="Love Icon 3" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <!-- Sidebar Hijau -->
+        <View
+            android:id="@+id/sidebar"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_below="@id/header"
+            android:background="#AEC8BC" />
+
+        <!-- Isi konten -->
+        <LinearLayout
+            android:id="@+id/content_container"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/header"
+            android:layout_marginStart="40dp"
+            android:padding="16dp"
+            android:background="@color/white">
+
+            <!-- Gambar Buku -->
+            <ImageView
+                android:id="@+id/book_cover"
+                android:layout_width="100dp"
+                android:layout_height="160dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/cover" />
+
+            <!-- Info Buku -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="16dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/book_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tittle"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="#7BA194" />
+
+                <TextView
+                    android:id="@+id/book_author"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/author"
+                    android:textSize="14sp"
+                    android:textColor="#7BA194"
+                    android:layout_marginTop="4dp" />
+
+                <!-- Garis pembatas -->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#CCCCCC"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp" />
+
+                <!-- Sinopsis -->
+                <TextView
+                    android:id="@+id/sinopsis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sinopsis"
+                    android:textSize="14sp"
+                    android:textColor="#7BA194" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Praktikum08</string>
+    <string name="notes">Notes</string>
+    <string name="judul">Judul</string>
+    <string name="deskripsi">Deskripsi</string>
+    <string name="submit">Submit</string>
+    <string name="back_button">Back</string>
+    <string name="delete_button">Delete</string>
+    <string name="featlynote">Featly Note</string>
+
+</resources>

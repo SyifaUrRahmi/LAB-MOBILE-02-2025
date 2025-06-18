@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/greenExtraLight"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <!-- Judul -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/notes"
+        android:textSize="25sp"
+        android:fontFamily="@font/featlynote"
+        android:textColor="@color/greenPrimary"
+        android:paddingBottom="12dp" />
+
+    <!-- SearchView di dalam CardView (kotak dengan sudut melengkung) -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="4dp"
+        app:cardBackgroundColor="@color/white">
+
+        <SearchView
+            android:id="@+id/searchView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:queryHint="Cari catatan..."
+            android:iconifiedByDefault="false"
+            android:background="@android:color/transparent"
+            android:padding="8dp" />
+    </androidx.cardview.widget.CardView>
+
+    <!-- Teks jika tidak ada data -->
+    <TextView
+        android:id="@+id/tvNoData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tidak ada catatan"
+        android:gravity="center"
+        android:textColor="@color/greenPrimary"
+        android:visibility="gone"
+        android:padding="8dp" />
+
+    <!-- Daftar Catatan + Tombol -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            tools:listitem="@layout/item_note"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tambah Catatan"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/greenPrimary"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="16dp"
+            android:elevation="6dp"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="10dp" />
+    </RelativeLayout>
+
+</LinearLayout>
